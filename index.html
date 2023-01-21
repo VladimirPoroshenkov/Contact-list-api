@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+    <link rel="stylesheet" href=".//style.css">
+    <script src=".//contactApi.js" defer></script>
+    <script src=".//index.js" defer></script>
+</head>
+<body>
+    <form id="contactForm">
+        <input id="id" type="hidden" />
+
+        <div>
+            <label for="firstName">First Name</label>
+            <input id="firstName" type="text" placeholder="Введите сообщение" />
+        </div>
+
+        <div>
+            <label for="LastName">Last Name</label>
+            <input id="LastName" type="text"/>
+        </div>
+
+        <div>
+            <label for="phone">phone</label>
+            <input id="phone" type="text"/>
+        </div>
+        
+        <button>Сохранить</button>
+    </form>
+    <h3>Contacts</h3>
+    <table>
+        <thead>
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Phone</td>
+                <td>Action</td>
+            </tr>
+        </thead>
+        
+        <tbody id="contactContainer">
+
+        </tbody>
+    </table>
+</body>
+</html>
